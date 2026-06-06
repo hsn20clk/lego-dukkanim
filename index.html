@@ -1,14 +1,10 @@
-<!-- LEGO DUKKANIM SITE VERSION: v40-favicon -->
+<!-- LEGO DUKKANIM SITE VERSION: v41-messi-product -->
 <!doctype html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LEGO Dükkanım</title>
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <meta name="theme-color" content="#09090b">
   <style>
     :root {
       --bg: #09090b;
@@ -545,22 +541,6 @@
       margin-bottom: 24px;
     }
 
-  
-    .site-version-badge {
-      position: fixed;
-      right: 14px;
-      bottom: 12px;
-      z-index: 9999;
-      font-size: 11px;
-      color: rgba(255,255,255,.55);
-      background: rgba(0,0,0,.35);
-      border: 1px solid rgba(255,255,255,.12);
-      border-radius: 999px;
-      padding: 6px 9px;
-      pointer-events: none;
-      backdrop-filter: blur(10px);
-    }
-
   </style>
 </head>
 <body>
@@ -633,7 +613,8 @@
               <span>⌕</span>
               <input id="searchInput" placeholder="Ürün, kategori veya set no ara..." />
             </div>
-            <select id="categorySelect"></select>
+            <select id="categorySelect"><option value="Editions">Editions</option>
+</select>
           </div>
         </div>
         <div class="empty" id="emptyState">Sıfır Setler bölümünde bu kategoriye ait ürün şu an bulunmuyor. Talep ettiğiniz set için WhatsApp’tan iletişime geçebilirsiniz.</div>
@@ -768,7 +749,25 @@
 
   <script>
     const products = [
-      { id: 1, setNumber: "75177", name: "Birinci Düzen Ağır Keşif Yürüyen Aracı", category: "Star Wars", condition: "Kapalı kutu", price: 2700, image: "https://images.brickset.com/sets/images/75177-1.jpg", note: "Kapalı kutu LEGO Star Wars seti. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz." },
+      
+
+    {
+      id: "43011",
+      no: "43011",
+      set: "43011",
+      title: "LEGO Editions Futbol Lionel Messi - Futbol Maç Özetleri",
+      name: "LEGO Editions Futbol Lionel Messi - Futbol Maç Özetleri",
+      category: "Editions",
+      durum: "Sıfır kapalı kutu",
+      condition: "Sıfır kapalı kutu",
+      image: "43011-lionel-messi-soccer-highlights.png",
+      img: "43011-lionel-messi-soccer-highlights.png",
+      section: "new",
+      type: "new",
+      description: "LEGO Editions Lionel Messi temalı sıfır kapalı kutu koleksiyonluk set. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz."
+    },
+
+{ id: 1, setNumber: "75177", name: "Birinci Düzen Ağır Keşif Yürüyen Aracı", category: "Star Wars", condition: "Kapalı kutu", price: 2700, image: "https://images.brickset.com/sets/images/75177-1.jpg", note: "Kapalı kutu LEGO Star Wars seti. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz." },
       { id: 2, setNumber: "43012", name: "Cristiano Ronaldo - Futbol Maç Özetleri", category: "Editions", condition: "Sıfır kapalı kutu", price: 1400, image: "https://images.brickset.com/sets/images/43012-1.jpg", note: "Sıfır kapalı kutu Cristiano Ronaldo temalı koleksiyon ürünü. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz." },
       { id: 3, setNumber: "77256", name: "Geleceğe Dönüş Zaman Makinesi", category: "Speed Champions", condition: "Kapalı kutu", price: 1500, image: "https://images.brickset.com/sets/images/77256-1.jpg", note: "Geleceğe Dönüş filminden Zaman Makinesi temalı kapalı kutu LEGO seti. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz." },
       { id: 4, setNumber: "77255", name: "Lightning McQueen", category: "Speed Champions", condition: "Kapalı kutu", price: 1500, image: "https://images.brickset.com/sets/images/77255-1.jpg", note: "Lightning McQueen temalı kapalı kutu LEGO seti. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz." },
@@ -1137,6 +1136,6 @@
     })();
   </script>
 
-  <div class="site-version-badge">LEGO Dükkanım v40</div>
+<div class="site-version-badge">LEGO Dükkanım v41</div>
 </body>
 </html>
