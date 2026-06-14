@@ -1,4 +1,4 @@
-<!-- LEGO DUKKANIM SITE VERSION: v51-uc-yeni-set-filtre-duzeltme -->
+<!-- LEGO DUKKANIM SITE VERSION: v53-tukenenler-altta -->
 <!doctype html>
 <html lang="tr">
 <head>
@@ -1017,10 +1017,12 @@
     function renderProducts() {
       const query = searchInput.value.trim().toLowerCase();
       const category = categorySelect.value;
-      const filtered = products.filter(product => {
-        const searchable = `${product.name} ${product.setNumber} ${product.category || ""} ${product.condition || ""}`.toLowerCase();
-        return searchable.includes(query) && (category === "Tümü" || product.category === category);
-      });
+      const filtered = products
+        .filter(product => {
+          const searchable = `${product.name} ${product.setNumber} ${product.category || ""} ${product.condition || ""}`.toLowerCase();
+          return searchable.includes(query) && (category === "Tümü" || product.category === category);
+        })
+        .sort((a, b) => Number(!!a.soldOut) - Number(!!b.soldOut));
 
       emptyState.style.display = filtered.length ? "none" : "block";
       grid.innerHTML = filtered.map((product, index) => {
@@ -1193,6 +1195,6 @@
     })();
   </script>
 
-<div class="site-version-badge">LEGO Dükkanım v51</div>
+<div class="site-version-badge">LEGO Dükkanım v53</div>
 </body>
 </html>
