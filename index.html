@@ -1,4 +1,4 @@
-<!-- LEGO DUKKANIM SITE VERSION: v54-yeni-tukendi-urunler -->
+<!-- LEGO DUKKANIM SITE VERSION: v55-brickheadz-harry-potter-duzeltme -->
 <!doctype html>
 <html lang="tr">
 <head>
@@ -806,7 +806,7 @@
 
   { id: 37, setNumber: "76327", name: "LEGO Demir Adam MK4 Büstü", category: "Marvel/DC", condition: "Tükendi", price: 0, image: "76327.png", note: "LEGO Demir Adam MK4 Büstü temalı set. Bu ürün tükendi.", section: "new", soldOut: true },
 
-  { id: 38, setNumber: "40677", name: "LEGO BrickHeadz Büyücülük Dünyası Azkaban Tutsağı Figürleri", category: "Harry Potter / BrickHeadz", condition: "Tükendi", price: 0, image: "40677.png", note: "LEGO BrickHeadz Büyücülük Dünyası Azkaban Tutsağı Figürleri temalı set. Bu ürün tükendi.", section: "new", soldOut: true },
+  { id: 38, setNumber: "40677", name: "LEGO BrickHeadz Büyücülük Dünyası Azkaban Tutsağı Figürleri", category: "Harry Potter", categories: ["Harry Potter", "BrickHeadz"], condition: "Tükendi", price: 0, image: "40677.png", note: "LEGO BrickHeadz Büyücülük Dünyası Azkaban Tutsağı Figürleri temalı set. Bu ürün tükendi.", section: "new", soldOut: true },
 
   { id: 39, setNumber: "31162", name: "LEGO Creator 3'ü 1 Arada Sevimli Tavşan", category: "Creator", condition: "Tükendi", price: 0, image: "31162.png", note: "LEGO Creator 3'ü 1 Arada Sevimli Tavşan temalı set. Bu ürün tükendi.", section: "new", soldOut: true },
 
@@ -991,7 +991,7 @@
 
     function renderCategories() {
       const categories = ["Tümü", ...Array.from(new Set([
-        ...products.map(product => product.category).filter(Boolean),
+        ...products.flatMap(product => product.categories || [product.category]).filter(Boolean),
         ...extraCategories
       ])).sort((a, b) => a.localeCompare(b, "tr"))];
 
@@ -1035,8 +1035,9 @@
       const category = categorySelect.value;
       const filtered = products
         .filter(product => {
-          const searchable = `${product.name} ${product.setNumber} ${product.category || ""} ${product.condition || ""}`.toLowerCase();
-          return searchable.includes(query) && (category === "Tümü" || product.category === category);
+          const searchable = `${product.name} ${product.setNumber} ${product.category || ""} ${(product.categories || []).join(" ")} ${product.condition || ""}`.toLowerCase();
+          const productCategories = product.categories || [product.category];
+          return searchable.includes(query) && (category === "Tümü" || productCategories.includes(category));
         })
         .sort((a, b) => Number(!!a.soldOut) - Number(!!b.soldOut));
 
@@ -1211,6 +1212,6 @@
     })();
   </script>
 
-<div class="site-version-badge">LEGO Dükkanım v54</div>
+<div class="site-version-badge">LEGO Dükkanım v55</div>
 </body>
 </html>
