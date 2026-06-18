@@ -1,4 +1,4 @@
-<!-- LEGO DUKKANIM SITE VERSION: v60-iki-yeni-urun -->
+<!-- LEGO DUKKANIM SITE VERSION: v61-fiyatlar -->
 <!doctype html>
 <html lang="tr">
 <head>
@@ -312,6 +312,7 @@
     .meta { display: flex; justify-content: space-between; gap: 12px; color: var(--muted); font-size: 12px; font-weight: 750; margin-bottom: 8px; }
     .card h3 { margin: 0; font-size: 18px; line-height: 1.18; letter-spacing: -.025em; min-height: 64px; }
     .note { color: var(--muted); font-size: 14px; line-height: 1.55; margin: 12px 0 0; }
+    .product-price { margin-top: 14px; font-size: 24px; font-weight: 900; color: var(--yellow); letter-spacing: -.4px; }
     .whatsapp {
       margin-top: 16px;
       background: white;
@@ -796,13 +797,13 @@
   <script>
     const products = [
 
-  { id: 48, setNumber: "71828", name: "LEGO NINJAGO Lloyd'un Geri Çekmeli Yarış Arabası", category: "NINJAGO", condition: "Sıfır kapalı kutu", price: 0, image: "71828.png", note: "LEGO NINJAGO Lloyd'un Geri Çekmeli Yarış Arabası sıfır kapalı kutu set. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.", section: "new" },
+  { id: 48, setNumber: "71828", name: "LEGO NINJAGO Lloyd'un Geri Çekmeli Yarış Arabası", category: "NINJAGO", condition: "Sıfır kapalı kutu", price: 1150, image: "71828.png", note: "LEGO NINJAGO Lloyd'un Geri Çekmeli Yarış Arabası sıfır kapalı kutu set. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.", section: "new" },
 
-  { id: 49, setNumber: "71052-KOMPLE", name: "LEGO CMF Serisi 29 Komple Set", category: "Minifigür", condition: "Sıfır kapalı kutu", price: 0, image: "71052-komple.png", note: "LEGO Minifigures Serisi 29, 12 minifigürden oluşan komple set. Sıfır kapalı kutu durumundadır. Detaylı bilgi için iletişime geçebilirsiniz.", section: "new" },
+  { id: 49, setNumber: "71052-KOMPLE", name: "LEGO CMF Serisi 29 Komple Set", category: "Minifigür", condition: "Sıfır kapalı kutu", price: 2500, image: "71052-komple.png", note: "LEGO Minifigures Serisi 29, 12 minifigürden oluşan komple set. Sıfır kapalı kutu durumundadır. Detaylı bilgi için iletişime geçebilirsiniz.", section: "new" },
 
   { id: 43, setNumber: "75349", name: "LEGO Yıldız Savaşları Kask Koleksiyonu Kaptan Rex Kaskı", category: "Star Wars", condition: "Tükendi", price: 0, image: "75349.png", note: "LEGO Star Wars Kaptan Rex Kaskı koleksiyon seti. Bu ürün tükendi.", section: "new", soldOut: true },
 
-  { id: 44, setNumber: "77260", name: "LEGO Speed Champions The Fast and The Furious Toyota Supra MK4", category: "Speed Champions", condition: "Sıfır kapalı kutu", price: 0, image: "77260.png", note: "LEGO Speed Champions Toyota Supra MK4 sıfır kapalı kutu set. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.", section: "new" },
+  { id: 44, setNumber: "77260", name: "LEGO Speed Champions The Fast and The Furious Toyota Supra MK4", category: "Speed Champions", condition: "Sıfır kapalı kutu", price: 1500, image: "77260.png", note: "LEGO Speed Champions Toyota Supra MK4 sıfır kapalı kutu set. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.", section: "new" },
 
   { id: 45, setNumber: "76311", name: "LEGO Spider-Man Spider-Verse Miles Morales vs. The Spot", category: "Spider-Man", condition: "Sıfır kapalı kutu", price: 0, image: "76311.png", note: "LEGO Spider-Man Spider-Verse Miles Morales vs. The Spot sıfır kapalı kutu set. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.", section: "new" },
 
@@ -812,7 +813,7 @@
 
   { id: 42, setNumber: "76917", name: "LEGO Speed Champions Nissan Skyline GT-R", category: "Speed Champions", condition: "Tükendi", price: 0, image: "76917.png", note: "LEGO Speed Champions Nissan Skyline GT-R temalı set. Bu ürün tükendi.", section: "new", soldOut: true },
 
-  { id: 41, setNumber: "76330", name: "LEGO Batman Logo", category: "Batman", condition: "Sıfır kapalı kutu", price: 0, image: "76330.png", note: "LEGO Batman Logo temalı sıfır kapalı kutu set. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.", section: "new" },
+  { id: 41, setNumber: "76330", name: "LEGO Batman Logo", category: "Batman", condition: "Sıfır kapalı kutu", price: 3300, image: "76330.png", note: "LEGO Batman Logo temalı sıfır kapalı kutu set. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.", section: "new" },
 
   { id: 33, setNumber: "21314", name: "LEGO Ideas TRON Legacy", category: "Ideas", condition: "Sıfır kapalı kutu", price: 0, image: "21314.png", note: "LEGO Ideas TRON Legacy temalı sıfır kapalı kutu set. Bu ürün tükendi.", section: "new", soldOut: true },
 
@@ -836,39 +837,39 @@
 
   { id: 29, setNumber: "10297", name: "LEGO ICONS Butik Otel", category: "Icons", condition: "Sıfır kapalı kutu", price: 0, image: "10297.png", note: "LEGO ICONS Butik Otel temalı sıfır kapalı kutu set. Bu ürün tükendi.", section: "new", soldOut: true },
 
-  { id: 30, setNumber: "72046", name: "LEGO Süper Mario Game Boy", category: "Icons", condition: "Sıfır kapalı kutu", price: 0, image: "72046.png", note: "LEGO Süper Mario Game Boy temalı sıfır kapalı kutu set. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.", section: "new" },
+  { id: 30, setNumber: "72046", name: "LEGO Süper Mario Game Boy", category: "Icons", condition: "Sıfır kapalı kutu", price: 2300, image: "72046.png", note: "LEGO Süper Mario Game Boy temalı sıfır kapalı kutu set. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.", section: "new" },
 
   { id: 31, setNumber: "76178", name: "LEGO Spider-Man Daily Bugle", category: "Spider-Man", condition: "Sıfır kapalı kutu", price: 0, image: "76178.png", note: "LEGO Spider-Man Daily Bugle temalı sıfır kapalı kutu set. Bu ürün tükendi.", section: "new", soldOut: true },
 
   { id: 32, setNumber: "42172", name: "LEGO Technic McLaren P1", category: "Technic", condition: "Kapalı kutu", price: 0, image: "42172.png", note: "LEGO Technic McLaren P1 kapalı kutu set. Bu ürün tükendi.", section: "new", soldOut: true },
 
-  { id: 24, setNumber: "76302", name: "LEGO Süpermen Robotu vs. Lex Luthor", category: "Marvel/DC", condition: "Sıfır kapalı kutu", price: 0, image: "76302.png", note: "LEGO Süpermen Robotu vs. Lex Luthor sıfır kapalı kutu set. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.", section: "new" },
+  { id: 24, setNumber: "76302", name: "LEGO Süpermen Robotu vs. Lex Luthor", category: "Marvel/DC", condition: "Sıfır kapalı kutu", price: 750, image: "76302.png", note: "LEGO Süpermen Robotu vs. Lex Luthor sıfır kapalı kutu set. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.", section: "new" },
 
-  { id: 25, setNumber: "76335", name: "LEGO Örümcek Adam ve Hayalet Sürücü Motosikleti", category: "Spider-Man", condition: "Sıfır kapalı kutu", price: 0, image: "76335.png", note: "LEGO Örümcek Adam ve Hayalet Sürücü Motosikleti sıfır kapalı kutu set. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.", section: "new" },
+  { id: 25, setNumber: "76335", name: "LEGO Örümcek Adam ve Hayalet Sürücü Motosikleti", category: "Spider-Man", condition: "Sıfır kapalı kutu", price: 450, image: "76335.png", note: "LEGO Örümcek Adam ve Hayalet Sürücü Motosikleti sıfır kapalı kutu set. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.", section: "new" },
 
-  { id: 26, setNumber: "71866", name: "LEGO NINJAGO Mirası Ninja Karakter Sergisi 15. Yıl Dönümü", category: "NINJAGO", condition: "Sıfır kapalı kutu", price: 0, image: "71866.png", note: "LEGO NINJAGO Mirası Ninja Karakter Sergisi 15. Yıl Dönümü sıfır kapalı kutu set. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.", section: "new" },
+  { id: 26, setNumber: "71866", name: "LEGO NINJAGO Mirası Ninja Karakter Sergisi 15. Yıl Dönümü", category: "NINJAGO", condition: "Sıfır kapalı kutu", price: 2100, image: "71866.png", note: "LEGO NINJAGO Mirası Ninja Karakter Sergisi 15. Yıl Dönümü sıfır kapalı kutu set. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.", section: "new" },
 
-  { id: 24, setNumber: "76274", name: "LEGO Batman Animasyon Serisi Batman ve Batmobile, Harley Quinn ve Mr. Freeze'e Karşı", category: "Batman", condition: "Sıfır kapalı kutu", price: 0, image: "76274.png", note: "LEGO Batman Animasyon Serisi Batman ve Batmobile, Harley Quinn ve Mr. Freeze'e Karşı temalı sıfır kapalı kutu set. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.", section: "new" },
+  { id: 24, setNumber: "76274", name: "LEGO Batman Animasyon Serisi Batman ve Batmobile, Harley Quinn ve Mr. Freeze'e Karşı", category: "Batman", condition: "Sıfır kapalı kutu", price: 2500, image: "76274.png", note: "LEGO Batman Animasyon Serisi Batman ve Batmobile, Harley Quinn ve Mr. Freeze'e Karşı temalı sıfır kapalı kutu set. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.", section: "new" },
 
-  { id: 25, setNumber: "76449", name: "LEGO Harry Potter Isıran Canavar Canavarlar Kitabı", category: "Harry Potter", condition: "Sıfır kapalı kutu", price: 0, image: "76449.png", note: "LEGO Harry Potter Isıran Canavar Canavarlar Kitabı temalı sıfır kapalı kutu set. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.", section: "new" },
+  { id: 25, setNumber: "76449", name: "LEGO Harry Potter Isıran Canavar Canavarlar Kitabı", category: "Harry Potter", condition: "Sıfır kapalı kutu", price: 2500, image: "76449.png", note: "LEGO Harry Potter Isıran Canavar Canavarlar Kitabı temalı sıfır kapalı kutu set. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.", section: "new" },
 
-      { id: 23, setNumber: "75258", name: "LEGO Yıldız Savaşları Anakin\'in Pod Yarış Arabası – 20. Yıl Dönümü Sürümü", category: "Star Wars", condition: "Sıfır kapalı kutu", price: 0, image: "75258.png", note: "LEGO Star Wars Anakin\'in Pod Yarış Arabası – 20. Yıl Dönümü Sürümü temalı sıfır kapalı kutu set. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.", section: "new" },
-      { id: 22, setNumber: "43011", name: "LEGO Editions Futbol Lionel Messi - Futbol Maç Özetleri", category: "Editions", condition: "Sıfır kapalı kutu", price: 0, image: "43011-lionel-messi-soccer-highlights.png", note: "LEGO Editions Lionel Messi temalı sıfır kapalı kutu koleksiyonluk set. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.", section: "new" },
-{ id: 1, setNumber: "75177", name: "Birinci Düzen Ağır Keşif Yürüyen Aracı", category: "Star Wars", condition: "Kapalı kutu", price: 2700, image: "https://images.brickset.com/sets/images/75177-1.jpg", note: "Kapalı kutu LEGO Star Wars seti. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz." },
-      { id: 3, setNumber: "77256", name: "Geleceğe Dönüş Zaman Makinesi", category: "Speed Champions", condition: "Kapalı kutu", price: 1500, image: "https://images.brickset.com/sets/images/77256-1.jpg", note: "Geleceğe Dönüş filminden Zaman Makinesi temalı kapalı kutu LEGO seti. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz." },
-      { id: 4, setNumber: "77255", name: "Lightning McQueen", category: "Speed Champions", condition: "Kapalı kutu", price: 1500, image: "https://images.brickset.com/sets/images/77255-1.jpg", note: "Lightning McQueen temalı kapalı kutu LEGO seti. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz." },
-      { id: 5, setNumber: "75449", name: "Mandalore Kuşatması Savaş Paketi", category: "Star Wars", condition: "Kapalı kutu", price: 1000, image: "https://images.brickset.com/sets/images/75449-1.jpg", note: "Mandalore Kuşatması temalı kapalı kutu LEGO Star Wars savaş paketi. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz." },
-      { id: 6, setNumber: "40775", name: "Mini Şövalye Kalesi", category: "GWP", condition: "Kapalı kutu", price: 2500, image: "https://images.brickset.com/sets/images/40775-1.jpg", note: "Mini Şövalye Kalesi temalı kapalı kutu GWP LEGO seti. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz." },
-      { id: 7, setNumber: "75400", name: "Plo Koon'un Jedi Yıldız Savaşçısı Mikro Savaş Uçağı", category: "Star Wars", condition: "Kapalı kutu", price: 500, image: "https://images.brickset.com/sets/images/75400-1.jpg", note: "Plo Koon'un Jedi Yıldız Savaşçısı temalı kapalı kutu LEGO Star Wars mikro savaş uçağı. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz." },
-      { id: 8, setNumber: "75391", name: "Kaptan Rex Y-Kanatlı Mikro Savaş Uçağı", category: "Star Wars", condition: "Kapalı kutu", price: 500, image: "https://images.brickset.com/sets/images/75391-1.jpg", note: "Kaptan Rex Y-Kanatlı temalı kapalı kutu LEGO Star Wars mikro savaş uçağı. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz." },
-      { id: 9, setNumber: "30723", name: "Ninja Cole'un Arabası", category: "NINJAGO", condition: "Sıfır ürün", price: 500, image: "https://images.brickset.com/sets/images/30723-1.jpg", note: "Ninja Cole'un Arabası temalı sıfır LEGO Ninjago ürünü. Detaylı fotoğraf ve ürün durumu için iletişime geçebilirsiniz." },,
+      { id: 23, setNumber: "75258", name: "LEGO Yıldız Savaşları Anakin\'in Pod Yarış Arabası – 20. Yıl Dönümü Sürümü", category: "Star Wars", condition: "Sıfır kapalı kutu", price: 6300, image: "75258.png", note: "LEGO Star Wars Anakin\'in Pod Yarış Arabası – 20. Yıl Dönümü Sürümü temalı sıfır kapalı kutu set. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.", section: "new" },
+      { id: 22, setNumber: "43011", name: "LEGO Editions Futbol Lionel Messi - Futbol Maç Özetleri", category: "Editions", condition: "Sıfır kapalı kutu", price: 1400, image: "43011-lionel-messi-soccer-highlights.png", note: "LEGO Editions Lionel Messi temalı sıfır kapalı kutu koleksiyonluk set. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.", section: "new" },
+{ id: 1, setNumber: "75177", name: "Birinci Düzen Ağır Keşif Yürüyen Aracı", category: "Star Wars", condition: "Kapalı kutu", price: 5500, image: "https://images.brickset.com/sets/images/75177-1.jpg", note: "Kapalı kutu LEGO Star Wars seti. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz." },
+      { id: 3, setNumber: "77256", name: "Geleceğe Dönüş Zaman Makinesi", category: "Speed Champions", condition: "Kapalı kutu", price: 1250, image: "https://images.brickset.com/sets/images/77256-1.jpg", note: "Geleceğe Dönüş filminden Zaman Makinesi temalı kapalı kutu LEGO seti. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz." },
+      { id: 4, setNumber: "77255", name: "Lightning McQueen", category: "Speed Champions", condition: "Kapalı kutu", price: 1300, image: "https://images.brickset.com/sets/images/77255-1.jpg", note: "Lightning McQueen temalı kapalı kutu LEGO seti. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz." },
+      { id: 5, setNumber: "75449", name: "Mandalore Kuşatması Savaş Paketi", category: "Star Wars", condition: "Kapalı kutu", price: 650, image: "https://images.brickset.com/sets/images/75449-1.jpg", note: "Mandalore Kuşatması temalı kapalı kutu LEGO Star Wars savaş paketi. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz." },
+      { id: 6, setNumber: "40775", name: "Mini Şövalye Kalesi", category: "GWP", condition: "Kapalı kutu", price: 1600, image: "https://images.brickset.com/sets/images/40775-1.jpg", note: "Mini Şövalye Kalesi temalı kapalı kutu GWP LEGO seti. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz." },
+      { id: 7, setNumber: "75400", name: "Plo Koon'un Jedi Yıldız Savaşçısı Mikro Savaş Uçağı", category: "Star Wars", condition: "Kapalı kutu", price: 600, image: "https://images.brickset.com/sets/images/75400-1.jpg", note: "Plo Koon'un Jedi Yıldız Savaşçısı temalı kapalı kutu LEGO Star Wars mikro savaş uçağı. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz." },
+      { id: 8, setNumber: "75391", name: "Kaptan Rex Y-Kanatlı Mikro Savaş Uçağı", category: "Star Wars", condition: "Kapalı kutu", price: 700, image: "https://images.brickset.com/sets/images/75391-1.jpg", note: "Kaptan Rex Y-Kanatlı temalı kapalı kutu LEGO Star Wars mikro savaş uçağı. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz." },
+      { id: 9, setNumber: "30723", name: "Ninja Cole'un Arabası", category: "NINJAGO", condition: "Sıfır ürün", price: 350, image: "https://images.brickset.com/sets/images/30723-1.jpg", note: "Ninja Cole'un Arabası temalı sıfır LEGO Ninjago ürünü. Detaylı fotoğraf ve ürün durumu için iletişime geçebilirsiniz." },,
   {
     id: 11,
     setNumber: "40468",
     name: "Sarı Taksi",
     category: "Creator",
     condition: "Sıfır kapalı kutu",
-    price: 0,
+    price: 950,
     image: "",
     note: "Sarı Taksi temalı sıfır kapalı kutu LEGO Creator seti. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.",
   section: "new",
@@ -879,7 +880,7 @@
     name: "Kai'nin Ninja Yarış Arabası EVO",
     category: "NINJAGO",
     condition: "Sıfır kapalı kutu",
-    price: 0,
+    price: 450,
     image: "",
     note: "Kai'nin Ninja Yarış Arabası EVO temalı sıfır kapalı kutu LEGO Ninjago ürünü. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.",
   section: "new",
@@ -890,7 +891,7 @@
     name: "Kai'nin Ejderha Robot Savaş Paketi",
     category: "NINJAGO",
     condition: "Sıfır kapalı kutu",
-    price: 0,
+    price: 450,
     image: "",
     note: "Kai'nin Ejderha Robot Savaş Paketi temalı sıfır kapalı kutu LEGO Ninjago ürünü. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.",
   section: "new",
@@ -901,7 +902,7 @@
     name: "Minifigür Serisi 29 (Futbol Kalecisi)",
     category: "Minifigür",
     condition: "Sıfır kapalı kutu",
-    price: 0,
+    price: 250,
     image: "",
     note: "Minifigür Serisi 29 Futbol Kalecisi. Detaylı fotoğraf ve ürün durumu için iletişime geçebilirsiniz.",
   section: "new",
@@ -912,7 +913,7 @@
     name: "Batman Bruce Wayne ve Yarasa Kostümü",
     category: "Batman",
     condition: "Sıfır kapalı kutu",
-    price: 0,
+    price: 450,
     image: "",
     note: "Batman Bruce Wayne ve Yarasa Kostümü temalı sıfır kapalı kutu LEGO ürünü. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.",
   section: "new",
@@ -923,7 +924,7 @@
     name: "Minifigür Serisi 29 (Bionicle Cosplayer)",
     category: "Minifigür",
     condition: "Sıfır kapalı kutu",
-    price: 0,
+    price: 250,
     image: "",
     note: "Minifigür Serisi 29 Bionicle Cosplayer. Detaylı fotoğraf ve ürün durumu için iletişime geçebilirsiniz.",
   section: "new",
@@ -934,7 +935,7 @@
     name: "Minifigür Serisi 29 (Gizemli Ronin)",
     category: "Minifigür",
     condition: "Sıfır kapalı kutu",
-    price: 0,
+    price: 250,
     image: "",
     note: "Minifigür Serisi 29 Gizemli Ronin. Detaylı fotoğraf ve ürün durumu için iletişime geçebilirsiniz.",
   section: "new",
@@ -945,7 +946,7 @@
     name: "LEGO Alışveriş Caddesi",
     category: "Icons",
     condition: "Ürün durumu için iletişime geçiniz",
-    price: 0,
+    price: 12500,
     image: "",
     note: "LEGO Icons Alışveriş Caddesi. Detaylı fotoğraf ve ürün durumu için iletişime geçebilirsiniz.",
   section: "new",
@@ -956,7 +957,7 @@
     name: "LEGO Batman Robot Zırhı",
     category: "Batman",
     condition: "Sıfır kapalı kutu",
-    price: 0,
+    price: 1000,
     image: "",
     note: "LEGO Batman Robot Zırhı temalı sıfır kapalı kutu LEGO ürünü. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.",
   section: "new",
@@ -967,7 +968,7 @@
     name: "Batman Tumbler vs. Two-Face ve Joker",
     category: "Batman",
     condition: "Sıfır kapalı kutu",
-    price: 0,
+    price: 2600,
     image: "",
     note: "Batman Tumbler vs. Two-Face ve Joker temalı sıfır kapalı kutu LEGO Batman seti. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.",
   section: "new",
@@ -978,7 +979,7 @@
     name: "Örümcek Adam ve Doktor Ock Metro Treni Sahnesi",
     category: "Spider-Man",
     condition: "Sıfır kapalı kutu",
-    price: 0,
+    price: 2300,
     image: "",
     note: "Örümcek Adam ve Doktor Ock Metro Treni Sahnesi temalı sıfır kapalı kutu LEGO Marvel / Spider-Man seti. Detaylı fotoğraf ve kutu durumu için iletişime geçebilirsiniz.",
   section: "new",
@@ -1122,6 +1123,7 @@
             </div>
             <h3>${product.name}</h3>
             <p class="note">${product.note}</p>
+            ${!product.soldOut && product.price > 0 ? `<div class="product-price">${formatPrice(product.price)}</div>` : ""}
             ${product.soldOut
               ? `<a class="whatsapp sold-out" href="javascript:void(0)">Tükendi</a>`
               : `<a class="whatsapp" target="_blank" rel="noreferrer" href="${whatsappLink(`Merhaba, ${product.setNumber} - ${product.name} ürünü hakkında bilgi almak istiyorum. Ürün mevcut mu?`)}">💬 Satın almak için yaz</a>`}
